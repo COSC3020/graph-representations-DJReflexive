@@ -19,3 +19,30 @@ most important part. Add your answer to this markdown file.
 
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
+
+
+# My Runtime Analysis
+
+My implementation of convertToAdjList take an adjacency matrix and converts 
+it into an adjacency list. It uses two nested for loops to complete this, 
+both taking a complexity of $\Theta(n)$ by themselves. However, since these 
+two loops are nested, this means there is n operations happening n times. 
+This leads to a final complexity of $\Theta(n^2)$ for the whole algorithm. 
+
+Conceptually this makes sense too. Since we have to look at every element 
+within the matrix to convert it to the list, and the matrix has a size of 
+$|V|^2$, of course it would take n^2 operations to look at every single 
+element.
+
+
+# Sources
+
+- https://www.freecodecamp.org/news/javascript-2d-arrays/: For how to work with 2D arrays.
+
+# Plagiarism Acknowledgement
+
+I certify that I have listed all sources used to complete this exercise, 
+including the use of any Large Language Models. All of the work is my own, 
+except where stated otherwise. I am aware that plagiarism carries severe 
+penalties and that if plagiarism is suspected, charges may be filed against 
+me without prior notice.
