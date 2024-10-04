@@ -8,7 +8,7 @@ function convertToAdjList(adjMatrix) {
     for (let i = 0; i < size; i++) {
         let buffer = [];
 
-        for (let j = 0; j < adjMatrix.length; j++) {
+        for (let j = 0; j < size; j++) {
             if (adjMatrix[i][j] != 0) { // If it has an edge
                 buffer.push(j);
             }
